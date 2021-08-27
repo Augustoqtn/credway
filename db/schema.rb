@@ -13,9 +13,9 @@
 ActiveRecord::Schema.define(version: 2021_08_26_183124) do
 
   create_table "contatos", force: :cascade do |t|
-    t.text "nome"
+    t.string "nome"
     t.date "data"
-    t.integer "cfp"
+    t.string "cpf"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
