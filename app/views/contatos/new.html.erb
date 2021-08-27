@@ -1,0 +1,21 @@
+ 
+<p> Pedimos que preencha seu dados com muita atenção:</p>
+<%= form_with model: @contato do |form| %>
+  <div>
+    <%= form.label :nome %><br>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div>
+    <%= form.label :data %><br>
+    <%= form.date_field :data %>
+  </div>
+  <div>
+    <%= form.label :cpf %><br>
+    <%= form.text_area :cpf %>
+  </div>
+
+  <div>
+    <%= form.submit :criar %>
+  </div>
+<% end %>

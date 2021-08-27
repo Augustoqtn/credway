@@ -1,0 +1,7 @@
+<h1>nome</h1>
+<%= @contato.nome %>
+<h1>Data de nascimento</h1>
+<p><%= @contato.data %></p>
+<h1>CPF</h1>
+<p><%= @contato.cpf %></p>
+<a href="https://api.whatsapp.com/send?phone=<%=@contato.telefone_wpp %>&text=<%= @contato.mensagem_whatsapp(contato_url(@contato))  %>">Fale com nossos atentendes!</a></p>
