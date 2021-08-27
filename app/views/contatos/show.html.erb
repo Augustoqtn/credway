@@ -4,4 +4,4 @@
 <p><%= @contato.data %></p>
 <h1>CPF</h1>
 <p><%= @contato.cpf %></p>
-<a href="https://api.whatsapp.com/send?phone=555195200061&text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20este%20emprestimo%2C%20este%20%C3%A9%20o%20meu%20link%20do%20protocolo%20https%3A%2F%2Fwww.homehost.com.br%2Fblog%2Ftutoriais%2Flinks-html%2F%23topico3">Fale com nossos atentendes!</a></p>
+<a href="https://api.whatsapp.com/send?phone=<%=@contato.telefone_wpp %>&text=<%= @contato.mensagem_whatsapp(contato_url(@contato))  %>">Fale com nossos atentendes!</a></p>
