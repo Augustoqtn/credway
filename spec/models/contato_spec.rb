@@ -28,7 +28,7 @@ RSpec.describe Contato do
     it 'retorna false quando é INVALIDO' do
       contato.cpf = '80416046257'
       
-      expect(contato.cpf_valido?).to eq(true)
+      expect(contato.cpf_valido?).to eq(false)
     end
   end
 
@@ -48,5 +48,12 @@ RSpec.describe Contato do
     # expect(contato.valid?).to be(false)
     expect(contato).not_to be_valid
     expect(contato.errors[:cpf]).not_to be_empty
+  end
+
+  it 'valida cpf' do
+    contato.cpf = '123'
+    
+    expect(contato).not_to be_valid
+    expect(contato.errors[:cpf].to_a).to eq(['CPF inválido'])
   end
 end
