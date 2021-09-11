@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Contato < ApplicationRecord
   validates :nome, presence: true
   validates :cpf, presence: true 
@@ -26,3 +27,5 @@ class Contato < ApplicationRecord
     errors.add(:cpf, 'CPF inválido') unless cpf_valido?
   end
 end
+=======
+>>>>>>> 34fdc4d788a3cf193b528842dd6d241cab33920b
