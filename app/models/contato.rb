@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 class Contato < ApplicationRecord
   validates :nome, presence: true
   validates :cpf, presence: true 
