@@ -1,6 +1,6 @@
 class Contato < ApplicationRecord
   validates :nome, presence: true
-  validates :cpf, presence: true
+  validates :cpf, presence: true 
   validate :valida_cpf
 
   def mensagem_whatsapp(url)
@@ -23,8 +23,6 @@ class Contato < ApplicationRecord
 
   def valida_cpf
     # if !cpf_valido?
-    unless cpf_valido?
-      errors.add(:cpf, 'CPF inválido')
-    end
+    errors.add(:cpf, 'CPF inválido') unless cpf_valido?
   end
 end
