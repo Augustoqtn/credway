@@ -1,7 +1,8 @@
-<<<<<<< HEAD
+
 class Contato < ApplicationRecord
   validates :nome, presence: true
   validates :cpf, presence: true 
+  validates :data, presence: true 
   validate :valida_cpf
 
   def mensagem_whatsapp(url)
