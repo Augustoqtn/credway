@@ -10,7 +10,7 @@ class Contato < ApplicationRecord
   end
 
   def telefone_wpp
-    '5551992236669'
+    '5551997641453'
   end
 
   def nome_cpf

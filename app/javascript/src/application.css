@@ -1,10 +1,11 @@
 @import "bootstrap";
+
 /* reset CSS */
-*{
+
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-
 }
 
 body {
@@ -12,83 +13,85 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #444;
 }
-section{
-    padding: 3rem 0 4rem 0 ;
+
+section {
+    padding: 3rem 0 4rem 0;
 }
 
-h1{
-    font-size:3rem;
+h1 {
+    font-size: 3rem;
     font-weight: normal;
 }
 
-h1.title{    
-    margin-bottom: 2rem; 
-    text-align: center;    
-    font-weight: bold; 
-}
-.gray{
-    background-color:#f7f7f7;
+h1.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
 }
 
-.container{
-     max-width: 1000px;
-     margin: auto;
-     padding: 0% 1rem;
+.gray {
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0% 1rem;
 }
 
 .intro p {
     margin: 1rem 2rem;
-    font-size:1.5rem;
-    font-weight:100;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: space-between;
 }
-.card{
+
+.card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
     height: 150px;
     width: 16%;
-    
     border-radius: 36px;
     color: white;
     font-size: 1.2rem;
 }
 
-.card.red{
+.card.red {
     height: 150px;
     background-color: red;
 }
 
-.card.blue{
+.card.blue {
     height: 150px;
     background-color: blue;
 }
 
-.card.yellow{
+.card.yellow {
     height: 150px;
-    background-color:yellow;
+    background-color: rgb(233, 233, 5);
 }
 
-.card.green{
+.card.green {
     height: 150px;
-    background-color:green;
+    background-color: rgb(2, 172, 2);
 }
 
-.card.purple{
+.card.purple {
     height: 150px;
-    background-color:purple;
+    background-color: purple;
 }
 
-.card.pink{
+.card.pink {
     height: 150px;
-    background-color:rgb(243, 77, 160);
+    background-color: rgb(248, 42, 145);
 }
 
-footer{
-    background-color:#1d5363;
+footer {
+    background-color: #1f7792;
 }
